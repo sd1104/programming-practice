@@ -28,15 +28,23 @@
 # puts tom[:name]
 
 
-class Tom
-  @name = 'Tom'
-  @age = 18
-  @gender = 'male'
+# class Tom
+#   @name = 'Tom'
+#   @age = 18
+#   @gender = 'male'
 
-  def name
-    puts @name
-  end
-end
+#   def name
+#     puts @name
+#   end
+# end
 
 # puts Tom.name
-puts Tom
+# puts Tom
+
+
+def phone_num(phone_num)
+  return phone_num.sub(/-/, "")
+end
+
+phone_n = "123-4"
+puts phone_num(phone_n)

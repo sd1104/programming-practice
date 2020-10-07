@@ -1,50 +1,14 @@
-# num1 = rand(11..99)
-# num2 = rand(11..99)
-# puts "num1:#{num1},num2:#{num2}"
-# while num1<num2 do
-#   num1 = rand(11..99)
-#   num2 = rand(11..99)
+# 電話番号から-を取り除く正規化
+
+# パターン１（全てのハイフンを取り除く）
+phone_n = "123-456-7-8-9"
+# def erase_hypen(phone_num)
+#   return phone_num.gsub(/-/, "")
 # end
-# puts "#{num1} - #{num2}"
+# puts erase_hypen(phone_n)
 
-# def minus
-#   num1 = rand(11..99)
-#   num2 = rand(11..99)
-#   while num1<num2 do
-#     num1 = rand(11..99)
-#     num2 = rand(11..99)
-#   end
-#   puts "#{num1}-#{num2}"
-# end
-
-# minus
-
-# tom = {
-#   name: 'tom',
-#    age: '18',
-#     gender: 'male'
-#   }
-
-# puts tom[:name]
-
-
-# class Tom
-#   @name = 'Tom'
-#   @age = 18
-#   @gender = 'male'
-
-#   def name
-#     puts @name
-#   end
-# end
-
-# puts Tom.name
-# puts Tom
-
-
-def phone_num(phone_num)
-  return phone_num.sub(/-/, "")
+# パターン２（数字だけを取り出す）
+def extract_num(phone_num)
+  return phone_num.scan(/[0-9]+/).join()
 end
-
-phone_n = "123-4"
-puts phone_num(phone_n)
+puts extract_num(phone_n)

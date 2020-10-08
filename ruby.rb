@@ -15,8 +15,18 @@ phone_num = "０９０ー１２３４ー６７８９"
 # puts extract_num(phone_n)
 
 # パターン3（全角を半角にして、数字だけを取り出す）
-def phone_num_ajust(phone_num)
-  phone_num_half = phone_num.tr( "A-Z０-９", "A-Z0-9")
-  return phone_num_half.scan(/[0-9]+/).join()
+# def phone_num_ajust(phone_num)
+#   phone_num_half = phone_num.tr( "A-Z０-９", "A-Z0-9")
+#   return phone_num_half.scan(/[0-9]+/).join()
+# end
+# puts phone_num_ajust(phone_num)
+
+# パターン４（全角半角処理、エラーハンドリング）
+def phone_num_check(phone_num)
+  if phone_num
+    return phone_num.tr("ー", "-").tr("A-Z０-９", "A-Z0-9").gsub(/-/,"")
+  else
+    return "値が不正です。"
+  end
 end
-puts phone_num_ajust(phone_num)
+puts phone_num_check(phone_num)

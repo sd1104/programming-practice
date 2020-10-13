@@ -37,17 +37,35 @@
 // 問題６
 // 次のプログラムを実行した時、コンソールには何が表示されるか？
 
-console.log(0 === "0")
-console.log(0 == "0")
+// console.log(0 === "0")
+// console.log(0 == "0")
 
-問題７
-次の値の方を述べよ。
+// 問題７
+// 次の値の方を述べよ。
 
-"abc"
-1
-1234567891234579789
-true
-null
-undefined
+// "abc"
+// 1
+// 1234567891234579789
+// true
+// null
+// undefined
 
-問題８
+// 問題８
+// 次のプログラムを実行した時、コンソールには何が表示されるか？
+
+// let a = 'Hello';
+// let b = a;
+// b = 'Bye'
+// console.log(a,b)
+
+// 問題８
+// 次のプログラムを実行した時、コンソールには何が表示されるか？
+// let a = {
+//   prop: 'Hello'
+// };
+// let b = a
+// b.prop = 'Bye';
+// console.log(a,b);
+
+問題９
+値がfalsy

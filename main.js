@@ -67,5 +67,7 @@
 // b.prop = 'Bye';
 // console.log(a,b);
 
-問題９
-値がfalsy
+// 問題９
+// 値がfalsyとなる値を５つ示せ。
+
+// ・false, null, 0, undefined, 0n, Nan, “”

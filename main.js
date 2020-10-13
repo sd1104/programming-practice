@@ -39,3 +39,15 @@
 
 console.log(0 === "0")
 console.log(0 == "0")
+
+問題７
+次の値の方を述べよ。
+
+"abc"
+1
+1234567891234579789
+true
+null
+undefined
+
+問題８
